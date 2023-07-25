@@ -12,7 +12,7 @@ void shell_interactive(void)
 	int status = -1;
 
 	do {
-		printf("-$ "); /* print prompt symbol */
+		printf("--$ "); /* print prompt symbol */
 		line = read_line(); /* read line from stdin */
 		args = split_line(line); /* tokenize line */
 		status = execute_args(args);
